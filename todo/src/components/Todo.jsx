@@ -1,9 +1,10 @@
-import React, {useRef} from 'react'
+import React, {useRef, useState} from 'react'
 import todo_icon from '../assets/todo_icon.png'
 import TodoItems from './TodoItems'
 
 const Todo = () => {
 
+const [todoList, setTodoList] = useState([]);
   const inputRef = useRef();
 
   const add = () =>
