@@ -51,9 +51,14 @@ inputRef.current.value="";
 
   {/*todo list*/}
 <div>
-  <TodoItems text="Learn React.js"/>
-  <TodoItems text="Learn FireBase"/>
+ {
+todoList.map((item,index)=>{
+  return <TodoItems key={index} text={item.text} />
+})
+ }
 </div>
+
+
     </div>
   )
 }
