@@ -1,5 +1,6 @@
 import React from 'react'
 import todo_icon from '../assets/todo_icon.png'
+import TodoItems from './TodoItems'
 
 const Todo = () => {
   return (
@@ -16,11 +17,14 @@ const Todo = () => {
 
 <div className=' flex items-center bg-gray-200 my-8 rounded-full'>
 
-  <input className='border-0 placeholder:text-slate-600 bg-transparent h-14 pl-6 pr-2 flex-1' type="text" placeholder='Add your Task'/>
+  <input className='border-0 placeholder:text-slate-600 bg-transparent h-14 pl-6 pr-2 flex-1 outline-none' type="text" placeholder='Add your Task'/>
   <button className='border-0 rounded-full bg-orange-800 h-14 text-white w-32 text-lg font-medium cursor-pointer'>ADD +</button>
 </div>
 
-
+  {/*todo list*/}
+<div>
+  <TodoItems/>
+</div>
     </div>
   )
 }
