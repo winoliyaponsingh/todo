@@ -5,12 +5,28 @@ import TodoItems from './TodoItems'
 const Todo = () => {
 
 const [todoList, setTodoList] = useState([]);
+
   const inputRef = useRef();
 
   const add = () =>
   {
 const inputText = inputRef.current.value.trim();
 console.log(inputText);
+
+if(inputText === "")
+{
+  return null;
+}
+
+const newTodo = {
+  id:Date.now(),
+  text:inputText,
+  isComplete: false,
+}
+
+setTodoList((prev)=> [...prev,newTodo]);
+inputRef.current.value="";
+
   }
 
 
