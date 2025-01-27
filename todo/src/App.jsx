@@ -1,12 +1,12 @@
-import React from 'react'
-import Todo from './components/Todo'
+import React from "react";
+import Todo from "./components/Todo";
 
 const App = () => {
   return (
-    <div className='bg-slate-600 grid min-h-screen'> 
-    <Todo/>
+    <div className="bg-slate-600 grid min-h-screen">
+      <Todo />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
